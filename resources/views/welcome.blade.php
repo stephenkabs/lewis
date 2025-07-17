@@ -134,7 +134,7 @@
 
                                                 </span>
 
-                                                <a href="services.html" class="mil-link mil-dark mil-arrow-place">
+                                                <a href="#" class="mil-link mil-dark mil-arrow-place">
                                                     <span>More about me</span>
                                                 </a>
 
