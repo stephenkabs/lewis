@@ -279,7 +279,7 @@
                                 @foreach ($feature as $item)
                                     <div class="col-md-6 col-lg-3 mil-services-grid-item p-0">
 
-                                        <a href="service.html" class="mil-service-card-sm mil-up">
+                                        <a href="#" class="mil-service-card-sm mil-up">
                                             <h5 class="mil-muted mil-mb-30">{{ $item->name }}</h5>
                                             <p class="mil-light-soft mil-mb-30">{{ $item->words }}</p>
                                             <div class="mil-button mil-icon-button-sm mil-arrow-place"></div>
