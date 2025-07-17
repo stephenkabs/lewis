@@ -18,7 +18,7 @@
     <!-- ashley scss -->
     <link rel="stylesheet" href="/lewis/css/style.css">
     <!-- page name -->
-    <title>Ashley</title>
+    <title>Articles</title>
 
 </head>
 

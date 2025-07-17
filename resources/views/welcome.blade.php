@@ -85,7 +85,7 @@
         <!-- frame -->
         <div class="mil-frame">
             <div class="mil-frame-top">
-                <a href="home-1.html" class="mil-logo">LS.</a>
+                <a href="/" class="mil-logo">LS.</a>
                 <div class="mil-menu-btn">
                     <span></span>
                 </div>
