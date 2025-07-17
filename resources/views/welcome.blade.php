@@ -162,7 +162,7 @@
                                             <li><a href="#." target="_blank" class="social-icon"><i class="far fa-circle"></i></a></li>
                                         </ul>
                                     </div> -->
-                                    <a href="portfolio-3.html" class="mil-button mil-arrow-place">
+                                    <a href="#" class="mil-button mil-arrow-place">
                                         <span>More About Me.</span>
                                     </a>
                                 </div>
