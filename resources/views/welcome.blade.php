@@ -74,7 +74,7 @@
                 </div>
             </div>
             <!-- frame clone end -->
-@include('lewis.frame')
+            @include('lewis.frame')
         </div>
         <!-- menu -->
 
@@ -108,8 +108,8 @@
                 <section class="mil-banner-personal">
 
                     <div class="mil-animation-frame">
-                        <div class="mil-animation mil-position-4 mil-dark mil-scale" data-value-1="7"
-                            data-value-2="1.4" style="right: 25%"></div>
+                        <div class="mil-animation mil-position-4 mil-dark mil-scale" data-value-1="7" data-value-2="1.4"
+                            style="right: 25%"></div>
                     </div>
 
                     <div class="container">
@@ -150,7 +150,8 @@
                             </div>
 
                             <div class="mil-banner-panel" style="background-color:#555555">
-                                <h5 style="color:#ffffff">"With the heart of a shepherd and the wings of an eagle, Lewis Shikapwasha continues to empower people to soar higher, dream bigger and live"</h5>
+                                <h5 style="color:#ffffff">"With the heart of a shepherd and the wings of an eagle, Lewis
+                                    Shikapwasha continues to empower people to soar higher, dream bigger and live"</h5>
 
                                 <div class="mil-right">
                                     <!--                                     <div class="mil-social-frame">
@@ -248,8 +249,7 @@
                                 <div class="row">
                                     <div class="col-lg-10">
 
-                                        <span
-                                            class="mil-suptitle mil-light-soft mil-suptitle-right mil-up">Pastor
+                                        <span class="mil-suptitle mil-light-soft mil-suptitle-right mil-up">Pastor
                                             Lewis Leadership<br> & strategies.</span>
 
                                     </div>
@@ -259,7 +259,8 @@
 
                                     {{-- <span class="mil-text-image"><img src="/lewis/img/photo/2.jpg"
                                             alt="team"></span> --}}
-                                    <h2 class="mil-h1 mil-muted mil-center">Unique <span class="mil-thin">Leadership</span>
+                                    <h2 class="mil-h1 mil-muted mil-center">Unique <span
+                                            class="mil-thin">Leadership</span>
                                     </h2>
 
                                 </div>
@@ -269,24 +270,25 @@
                                             class="mil-thin">Strategies.</span></h2>
                                     <a href="/contact-us"
                                         class="mil-services-button mil-button mil-arrow-place"><span>Contact Me
-                                            </span></a>
+                                        </span></a>
 
                                 </div>
                             </div>
-                            @foreach ($feature as $item)
-                                <div class="row mil-services-grid m-0">
+
+                            <div class="row mil-services-grid m-0">
+                                @foreach ($feature as $item)
                                     <div class="col-md-6 col-lg-3 mil-services-grid-item p-0">
 
                                         <a href="service.html" class="mil-service-card-sm mil-up">
                                             <h5 class="mil-muted mil-mb-30">{{ $item->name }}</h5>
-                                            <p class="mil-light-soft mil-mb-30">{{$item->words}}</p>
+                                            <p class="mil-light-soft mil-mb-30">{{ $item->words }}</p>
                                             <div class="mil-button mil-icon-button-sm mil-arrow-place"></div>
                                         </a>
 
                                     </div>
-
-                                </div>
                                 @endforeach
+                            </div>
+
                         </div>
                     </div>
                 </section>
@@ -300,14 +302,20 @@
 
                                 <div class="mil-mb-90">
                                     <h2 class="mil-up mil-mb-60">Our Book <br>Store</h2>
-                                    <p class="mil-up mil-mb-30">Lewis Shipwasha is not only a respected leader in board governance, finance, and
-                                        community development—he’s also a published author whose works inspire purpose, accountability,
-                                        and excellence. His books offer practical wisdom drawn from real-world experience, delivered with clarity and heart.</p>
+                                    <p class="mil-up mil-mb-30">Lewis Shipwasha is not only a respected leader in board
+                                        governance, finance, and
+                                        community development—he’s also a published author whose works inspire purpose,
+                                        accountability,
+                                        and excellence. His books offer practical wisdom drawn from real-world
+                                        experience, delivered with clarity and heart.</p>
 
-                                    <p class="mil-up mil-mb-60">"With the heart of a shepherd and the wings of an eagle, Lewis Shikapwasha continues to empower people to soar higher, dream bigger and live"</p>
+                                    <p class="mil-up mil-mb-60">"With the heart of a shepherd and the wings of an
+                                        eagle, Lewis Shikapwasha continues to empower people to soar higher, dream
+                                        bigger and live"</p>
 
                                     <div class="mil-up"><a href="/book_store"
-                                            class="mil-button mil-arrow-place mil-mb-60"><span>Online Book Store</span></a>
+                                            class="mil-button mil-arrow-place mil-mb-60"><span>Online Book
+                                                Store</span></a>
                                     </div>
 
                                     <h4 class="mil-up"><span class="mil-thin">We are</span> Unleashing <br><span
@@ -321,33 +329,35 @@
                                     <div class="mil-lines-place"></div>
 
                                     <div class="row mil-mb-60">
-@php
-    $chunks = $service->take(4)->chunk(2);
-@endphp
+                                        @php
+                                            $chunks = $service->take(4)->chunk(2);
+                                        @endphp
 
-@foreach ($chunks as $column)
-    <div class="col-sm-6">
-        @foreach ($column as $item)
-            <div class="mil-team-card mil-up mil-mb-30">
-                <img src="/service/{{ $item->image }}" alt="Team member">
-                <div class="mil-description">
-                    <div class="mil-secrc-text">
-                        <h5 class="mil-muted mil-mb-5">
-                            <a href="{{ route('service.public_show', $item->slug) }}">{{ $item->name }}</a>
-                        </h5>
-                        <p class="mil-link mil-light-soft mil-mb-10">{{ $item->category->name }}</p>
-                        {{-- <ul class="mil-social-icons mil-center">
+                                        @foreach ($chunks as $column)
+                                            <div class="col-sm-6">
+                                                @foreach ($column as $item)
+                                                    <div class="mil-team-card mil-up mil-mb-30">
+                                                        <img src="/service/{{ $item->image }}" alt="Team member">
+                                                        <div class="mil-description">
+                                                            <div class="mil-secrc-text">
+                                                                <h5 class="mil-muted mil-mb-5">
+                                                                    <a
+                                                                        href="{{ route('service.public_show', $item->slug) }}">{{ $item->name }}</a>
+                                                                </h5>
+                                                                <p class="mil-link mil-light-soft mil-mb-10">
+                                                                    {{ $item->category->name }}</p>
+                                                                {{-- <ul class="mil-social-icons mil-center">
                             <li><a href="#." class="social-icon"><i class="fab fa-behance"></i></a></li>
                             <li><a href="#." class="social-icon"><i class="fab fa-dribbble"></i></a></li>
                             <li><a href="#." class="social-icon"><i class="fab fa-twitter"></i></a></li>
                             <li><a href="#." class="social-icon"><i class="fab fa-github"></i></a></li>
                         </ul> --}}
-                    </div>
-                </div>
-            </div>
-        @endforeach
-    </div>
-@endforeach
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                @endforeach
+                                            </div>
+                                        @endforeach
 
                                     </div>
 
@@ -534,27 +544,31 @@
                             </div>
                         </div>
                         <div class="row">
-                                      @foreach ($article->take(4) as $item)
-                            <div class="col-lg-6">
+                            @foreach ($article->take(4) as $item)
+                                <div class="col-lg-6">
 
-                                <a href="{{ route('articles.public_show', $item->slug) }}" class="mil-blog-card mil-mb-60">
-                                    <div class="mil-cover-frame mil-up">
-                                        <img src="/article/{{ $item->image }}" alt="cover">
-                                    </div>
-                                    <div class="mil-post-descr">
-                                        <div class="mil-labels mil-up mil-mb-30">
-                                            <div class="mil-label mil-upper mil-accent">{{ $item->category->name }}</div>
-                                            <div class="mil-label mil-upper">{{ \Carbon\Carbon::parse($item->created_at)->format('F j, Y') }}</div>
+                                    <a href="{{ route('articles.public_show', $item->slug) }}"
+                                        class="mil-blog-card mil-mb-60">
+                                        <div class="mil-cover-frame mil-up">
+                                            <img src="/article/{{ $item->image }}" alt="cover">
                                         </div>
-                                        <h4 class="mil-up mil-mb-30">{{$item->name}}</h4>
-                                        <p class="mil-post-text mil-up mil-mb-30">{{ $item->words }}</p>
-                                        <div class="mil-link mil-dark mil-arrow-place mil-up">
-                                            <span>Read more</span>
+                                        <div class="mil-post-descr">
+                                            <div class="mil-labels mil-up mil-mb-30">
+                                                <div class="mil-label mil-upper mil-accent">
+                                                    {{ $item->category->name }}</div>
+                                                <div class="mil-label mil-upper">
+                                                    {{ \Carbon\Carbon::parse($item->created_at)->format('F j, Y') }}
+                                                </div>
+                                            </div>
+                                            <h4 class="mil-up mil-mb-30">{{ $item->name }}</h4>
+                                            <p class="mil-post-text mil-up mil-mb-30">{{ $item->words }}</p>
+                                            <div class="mil-link mil-dark mil-arrow-place mil-up">
+                                                <span>Read more</span>
+                                            </div>
                                         </div>
-                                    </div>
-                                </a>
+                                    </a>
 
-                            </div>
+                                </div>
                             @endforeach
 
                         </div>
@@ -562,7 +576,7 @@
                 </section>
                 <!-- blog end -->
 
-@include('lewis.footer')
+                @include('lewis.footer')
 
                 <!-- hidden elements -->
                 <div class="mil-hidden-elements">
